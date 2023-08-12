@@ -1,0 +1,210 @@
+body{
+    background-color: #faf3ed;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+::selection {
+    color: white;
+    background: #C8693A;
+  }
+.slide-txt{
+    background-color: rgba(0, 0, 0, 0.471);
+}
+.fixed-icon i{
+    color:#C8693A
+}
+.fixed-icon i:hover{
+    color:#ae9c93    
+}
+.slide-txt .btn-tst{
+    background-color: #C8693A;
+}
+.slide-txt .btn-tst:hover{
+    background-color: black
+}
+#jum-btn a{
+    background-color:#C8693A
+}
+#jum-btn a:hover{
+    background-color: rgb(213, 182, 138);
+}
+.jumbotron-text{
+    background: -webkit-linear-gradient( white ,#C8693A , rgb(180, 125, 125), #C8693A , brown, rgb(177, 129, 129) , #C8693A , rgb(180, 125, 125));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-user-select: none;
+}
+.sec3-div{
+    background-color: rgb(46, 42, 42)
+}
+.fixed-img1{
+    background-image: url(/images/bg5.jpg);
+    width: 100%;
+    height:500px;
+    background-attachment: fixed;
+}
+.img-itlc{
+    clip-path: polygon(0% 0%, 104% 0%, 102% -19%, 81% 102%, 0% 100%);
+}
+.line{
+    border-radius: 5px;
+    padding: 2px; 
+    width: 70px;
+    transition: 0.8s;
+}
+.line-card:hover .line{
+    width: 150px;
+}
+.line-card:hover .img-card-line{
+    transform: scale(1.1);
+}
+.img-card-line{ 
+    transition:0.4s;
+}
+.img-itlc2{
+    clip-path: polygon(25% 0%, 162% -14%, 196% 109%, 25% 100%, 4% -18%);
+}
+.fixed-img2{
+    background-image: url(/images/chef-testim.jpg);
+    width: 100%;
+    height:400px;
+    /* background-attachment: fixed; */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+}
+
+.modal-backdrop {
+    z-index: 0;
+}
+.over-lay{
+    background: linear-gradient(rgba(0, 0, 0, 0.214),#c8693a69);
+}
+.over-lay:hover{
+    background: linear-gradient(rgba(255, 255, 255, 0.297) , rgba(0, 0, 0, 0.226));
+}
+.ho-card{
+    transition: 0.7s;
+}
+.ho-card:hover .hocard-overlay{
+    margin-top:20px
+}
+.ho-card:hover{
+    transform:scale(0.9,0.9);
+}
+#img-card:hover{
+    filter: brightness(110%);   
+}
+.section .section-center{
+    top:50%;
+    left:0;
+    right:0;
+    -webkit-transform:translateY(-50%);
+    transform:translateY(-50%)
+}
+#booking{
+    background-image: url(/images/88.jpg);
+    
+    background-size:cover;
+    background-position:center;
+}
+.booking-form>form{
+    background-color:#1011139e;
+    padding:30px 20px;
+    border-radius:3px
+}
+.booking-form .form-control{
+    background-color:#f5f5f5;
+    border:none;
+    height:45px;
+    border-radius:3px;
+    -webkit-box-shadow:none;
+    box-shadow:none;
+    font-weight:400;
+    color:#101113
+}
+.aft-card::after{
+    content: " " ;
+    position: absolute;
+
+    width: 0;
+    height: 0;
+    
+    background-color: #c8693a59;
+    transition: 0.5s;
+
+    top:0;
+    left: 0;
+
+    opacity: 0;
+    z-index: 1;
+}
+.aft-card:hover::after{
+    width: 100%;
+    height: 100%;
+    /* z-index: 0; */
+    opacity: 0.7;
+    transition: 0.7s all ease;
+    
+} 
+.aft-card::before{
+    content: " " ;
+    position: absolute;
+
+    width: 0;
+    height: 0;
+    
+    background-color: #c8693a59;
+    transition: 0.5s;
+
+    bottom:0;
+    right: 0;
+
+    opacity: 0;
+    z-index: 1;
+
+}
+.aft-card:hover::before{
+    width: 100%;
+    height: 100%;
+    /* z-index: 0; */
+    opacity: 0.7;
+    transition: 0.7s all ease;
+} 
+.aft-card > *{
+    z-index: 100;
+    
+}
+.comment{
+    background-image: url(/images/footer.jpg);
+    /* background-attachment: fixed; */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+}
+.footer-text p:hover{
+    color:white;
+}
+@media (max-width: 600px) {
+    .italic-card{
+    display: flex;
+    /* flex-direction: column-reverse; */
+    }
+    .img-itlc2 ,.img-itlc{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+    /* .img-top{
+        position:absolute;
+        top:0;
+    } */
+    /* .b-txt{
+        margin-top:320px
+    } */
+    .tst-card{
+        flex-direction: column-reverse;
+
+    }
+    .tst-card-body{
+        margin-left: -42px;
+    }
+}
